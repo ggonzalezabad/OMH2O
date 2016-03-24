@@ -1,0 +1,337 @@
+# PGE Description File
+
+PGE Name: OMH2O
+
+Long Name: OMI/Aura water vapor (H2O) Total Column 1-Orbit L2 Swath 13x24km
+
+Lead Algorithm Scientist: Kelly Chance
+
+Other Algorithm Scientists: Thomas P. Kurosu, Gonzalo Gonzalez Abad, Helen Wang
+
+PGE Developer: Thomas P. Kurosu & Gonzalo Gonzalez Abad & Helen Wang
+
+Support Contact: Peter Leonard
+
+Description: >
+
+    Basic Optical Absorption Spectroscopy (BOAS) fitting algorithm for 
+    H2O total columns from OMI measurements.
+
+Structure: Run OMH2O.exe
+
+Operational Scenario: >
+    Run as each orbit arrives, but only after the orbit has been
+    processed by OMCLDO2 (cloud fraction and cloud top pressure).
+
+Period: Orbits=1
+
+Output Files:
+
+    - LUN:      700999
+      ESDT:     OMH2O
+      Filename: OMH2O-o<OrbitNumber>.he5
+      Desc: OMI/Aura water vapor (H2O) Total Column 1-Orbit L2 Swath 13x24km
+
+Support Output Files:
+#  None
+
+Static Input Files: 
+
+    - LUN:      700001
+      Filename: OMH2O.MCF
+      Desc:     Metadata configuration File.
+
+    - LUN:      700050
+      Filename: OMSAO_SlitFunction_HyperPar.dat
+      Desc:     Hyper-parameterization of OMI slit functin lab measurements.
+
+    - LUN:      700100
+      Filename: OMH2O_control.txt
+      Desc:     Fitting control file for algorithm set-up.
+
+    - LUN:      700101
+      Filename: OMSAO_NKPNO_SolarSpec_JQSRT2011.dat.dat
+      Desc:     Solar reference spectrum.
+
+    - LUN:      700102
+      Filename: OMSAO_MolecularRing_Spectrum.dat
+      Desc:     Molecular Ring absorption cross sections (X-sec).
+
+    - LUN:      700103
+      Filename: OMSAO_O3_218K_Brion.dat
+      Desc:     O3 absorption cross sections at temperature T1. Not used
+
+    - LUN:      700104
+      Filename: OMSAO_O3_228K_Brion.dat
+      Desc:     O3 absorption X-sec at T2.
+
+    - LUN:      700105
+      Filename: OMSAO_Zero_Spec.dat
+      Desc:     O3 absorption X-sec at T3. Not used by default.
+
+    - LUN:      700106
+      Filename: OMSAO_NO2_220K_IASB.dat
+      Desc:     NO2 absorption X-sec T1. Not used by default.
+
+    - LUN:      700107
+      Filename: OMSAO_Zero_Spec.dat
+      Desc:     NO2 absorption X-sec T2.
+
+    - LUN:      700108
+      Filename: OMSAO_O4_294K_BISA.dat
+      Desc:     O2-O2 absorption X-sec.
+
+    - LUN:      700109
+      Filename: OMSAO_SO2_295k_IASB.dat
+      Desc:     SO2 absorption X-sec. Not used by default.
+
+    - LUN:      700110
+      Filename: OMSAO_BrO_228K_Wilmouth.dat. Not used.
+      Desc:     BrO absorption X-sec.
+
+    - LUN:      700111
+      Filename: OMSAO_OClO_213K_UBremen.dat
+      Desc:     OClO absorption X-sec. Not used by default.
+
+    - LUN:      700112
+      Filename: OMSAO_HCHO_300K_Cantrell_MMcorrected.dat
+      Desc:     HCHO absorption X-sec. Not used.
+
+    - LUN:      700113
+      Filename: OMSAO_H2O_280K_HITRAN2008.dat
+      Desc:     H2O absorption X-sec.
+
+    - LUN:      700114
+      Filename: OMSAO_LQH2O_PopeFry_Pure2column.dat
+      Desc:     Liquid H2O absorption X-sec.
+
+    - LUN:      700115
+      Filename: OMSAO_CHOCHO_296K_Volkamer.dat
+      Desc:     CHOCHO absorption X-sec.
+
+    - LUN:      700116
+      Filename: OMSAO_Zero_Spec.dat
+      Desc:     IO absorption X-sec. Not used by default.
+
+    - LUN:      700117
+      Filename: OMSAO_Zero_Spec.dat
+      Desc:     HONO mode spectrum. Not used by default.
+
+    - LUN:      700118
+      Filename: OMSAO_VibrationalRaman_Spectrum.dat
+      Desc:     Vibrational Raman (Water Ring) X-secs.
+
+    - LUN:      700119
+      Filename: OMSAO_Zero_Spec.dat
+      Desc:     Common mode spectrum. Usually computed on-line.
+
+    - LUN:      700120
+      Filename: OMSAO_Zero_Spec.dat
+      Desc:     Fitting Residuals. Not used by default.
+
+    - LUN:      700121
+      Filename: OMSAO_Zero_Spec.dat
+      Desc:     Pseudo absorber X-secs. Not used by default.
+
+    - LUN:      700122
+      Filename: OMSAO_Zero_Spec.dat
+      Desc:     Polarization correction. Not used.
+
+    - LUN:      700123
+      Filename: OMSAO_Zero_Spec.dat
+      Desc:     Undersampling spectrum, Phase 1. Usually computed on-line
+
+    - LUN:      700124
+      Filename: OMSAO_Zero_Spec.dat
+      Desc:     Undersampling spectrum, Phase 2. Usually computed on-line
+
+    - LUN:      700125
+      Filename: OMSAO_Zero_Spec.dat
+      Desc:     Placeholder for BrO pre-fit slant columns. Not used.
+
+    - LUN:      700126
+      Filename: OMSAO_Zero_Spec.dat
+      Desc:     Placeholder for O3 pre-fit slant columns. Not used.
+
+    - LUN:      700127
+      Filename: OMSAO_Zero_Spec.dat
+      Desc:     Placeholer for NoName absorption X-sec. Not used by default.
+
+    - LUN:      700210
+      Filename: OMHCHO_AMF_Tables_2x2p5_328nm.he5
+      Desc:     HCHO Air Mass Factor Tables, computed at 328nm. Not used.
+
+    - LUN:      700230
+      Filename: OMHCHO_ISCCP_Clouds_1200h.he5
+      Desc:     ISCCP Cloud Climatology at 1200h. Not used.
+
+    - LUN:      700250
+      Filename: AMFs_lookup_430_480nm_m325.he5
+      Desc:     Scattering weights look up table for H2O region.
+
+    - LUN:      700270
+      Filename: OMI_H2OBrOSO2HCHO_GEOS5_2x2p5.he5
+      Desc:     H2O Climatology for AMFs calculations.
+
+    - LUN:      700280
+      Filename: OMI-Aura_L3-OMLER_2005m01-2009m12_v003-2010m0503t063707.he5
+      Desc:     OMI albedo database for AMFs calculation.
+
+    - LUN:      700301
+      Filename: OMSAO3-o00000.he5
+      Desc:     OMSAO3 pre-fitted O3 parameters. Not used by default.
+
+    - LUN:      700302
+      Filename: OMBRO-o00000.he5
+      Desc:     OMBRO pre-fitted BrO parameters. Not used by default.
+
+    - LUN:      700400
+      Filename: OMSAO_SolarComposite_Global.he5
+      Desc:     Composite OMI Solar Spectrum, global mode.
+
+    - LUN:      700500
+      Filename: omisol_v003_avg_nshi_backup.dat
+      Desc:     Average OMI Solar Spectrum. Not used by default.
+
+Dynamic Input Files: 
+
+    - LUN:  700010
+      ESDT: OML1BRVG
+      Rule: Required
+      Desc: OMI/Aura Level 1B UV Global Geolocated Earthshine Radiances
+
+    - LUN:  700020
+      ESDT: OML1BIRR
+      Rule: Required
+      Desc: OMI/Aura Level 1B Averaged Solar Irradiances
+
+    - LUN:  10301
+      ESDT: LEAPSECT
+      Rule: Required
+      Desc: Leap Seconds - ECS internal format for Toolkit
+
+    - LUN:  10401
+      ESDT: UTCPOLET
+      Rule: Required
+      Desc: UT1 - UTC and Polar Motion - ECS internal format for Toolkit
+
+    - LUN:  700240
+      ESDT: OMCLDO2
+      Rule: Optional
+      Desc: OMI/Aura Cloud Pressure and Fraction (Raman Scattering) 1-Orbit L2 Swath 13x24km
+
+Runtime Parameters:
+
+    - LUN:   10220
+      Param: Toolkit version string
+      Value: 'SCF  TK5.2.18'
+
+    - LUN:   10258
+      Param: Granule Start Time
+      Value: '<StartTime>'
+
+    - LUN:   10259
+      Param: Granule End Time
+      Value: '<EndTime>'
+
+    - LUN:   200100
+      Param: SMF Verbosity Threshold
+      Value: 0
+
+    - LUN:   200105
+      Param: PGEVERSION
+      Value: '"<PGEVersion>"'
+
+    - LUN:   200110
+      Param: ProcessingCenter
+      Value: '"<ProcessingCenter>"'
+
+    - LUN:   200115
+      Param: ProcessingHost
+      Value: '"<ProcessingHost>"'
+      
+    - LUN:   200135
+      Param: REPROCESSINGACTUAL
+      Value: '"<ReprocessingActual>"'
+
+    - LUN:   200170
+      Param: ProcessLevel
+      Value: '"2"'
+
+    - LUN:   200175
+      Param: InstrumentName
+      Value: '"OMI"'
+
+    - LUN:   200180
+      Param: OPERATIONMODE
+      Value: '"Test"'
+
+    - LUN:   200185
+      Param: AuthorAffiliation
+      Value: '"Smithsonian Astrophysical Observatory"'
+
+    - LUN:   200190
+      Param: AuthorName
+      Value: '"Thomas P. Kurosu / Gonzalo Gonzalez Abad / Helen Wang"'
+
+    - LUN:   200195
+      Param: LOCALVERSIONID
+      Value: '"RFC1321 MD5 = not yet calculated"'
+
+    - LUN:   200200
+      Param: OrbitNumber
+      Value: '<OrbitNumber>'
+
+    - LUN:   200210
+      Param: SwathName
+      Value: '"OMI Total Column Amount H2O"'
+
+    - LUN:   200220
+      Param: VERSIONID
+      Value: "<ECSCollection>"
+      Desc:  ECS Collection Number.
+
+    - LUN:   700000
+      Param: PGE Name
+      Value: OMH2O
+ 
+Production Rules:
+
+ - Rule: GetOrbitParams
+
+ - Rule: Common
+   ESDT: LEAPSECT
+
+ - Rule: Common
+   ESDT: UTCPOLET
+
+ - Rule: OrbitMatch
+   ESDT: OMCLDO2
+
+ - Rule: OrbitMatch
+   ESDT: OML1BRVG
+
+ - Rule: ClosestOrbit
+   ESDT: OML1BIRR
+   EarlyDelta: 750
+   LateDelta: 750
+
+Summary Data Extraction Directives:
+
+ - Fieldtype: Data Fields
+   Swathname: OMI Total Column Amount H2O
+   Fieldname: AverageColumnAmount
+   DBKey: AverageColumnAmount
+
+ - Fieldtype: Data Fields
+   Swathname: OMI Total Column Amount H2O
+   Fieldname: AverageColumnUncertainty
+   DBKey: AverageColumnUncertainty
+
+ - Fieldtype: Data Fields
+   Swathname: OMI Total Column Amount H2O
+   Fieldname: AverageFittingRMS
+   DBKey: AverageFittingRMS
+
+Dependencies:
+# None

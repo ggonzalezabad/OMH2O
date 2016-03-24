@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------------
+history.txt for OMH2O
+
+This file shows a summary of changes made for each PGE version:
+
+  (a) What changed in the PGE
+  (b) Why was it changed
+  (c) How the oputput product will be effected by the change
+  (d) The date of the change
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+NOTE: OMH2O is one of the PGEs by the Smithsonian Astrophysical 
+      Observatory (SAO), the other being OMHCHO and OMCHOCHO.
+      All source code between these are shared through a separate
+      OMI_SAO_Shared_VOCs directory.
+      Please also see OMI_SAO_Shared_VOCs/doc/history.txt for
+      information on PGE version history.
+--------------------------------------------------------------------------------
+
+1.0.0                                                             26 August 2013
+--------------------------------------------------------------------------------
+First version under Gonzalo Gonzalez Abad and Helen Wang

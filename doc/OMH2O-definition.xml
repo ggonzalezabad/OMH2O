@@ -1,0 +1,2204 @@
+<?xml version="1.0"?>
+<!DOCTYPE HDF-EOS-Validation-Definition SYSTEM "he5v.xml">
+<HDF-EOS-Validation-Definition>
+  <Attributes>
+    <Mandatory>
+      <Attribute name="AuthorAffiliation">
+        <StringValue>
+          <s>Smithsonian Astrophysical Observatory</s>
+        </StringValue>
+      </Attribute>
+      <Attribute name="AuthorName">
+        <StringValue>
+          <s>Thomas P. Kurosu</s>
+        </StringValue>
+      </Attribute>
+      <Attribute name="GranuleDay">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>1</i></MinInt>
+            <MaxInt><i>31</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="GranuleMonth">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>1</i></MinInt>
+            <MaxInt><i>12</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="GranuleYear">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>2000</i></MinInt>
+            <MaxInt><i>2099</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="HDFEOSVersions">
+        <StringValue/>
+      </Attribute>
+      <Attribute name="InputVersions">
+        <StringValue/>
+      </Attribute>
+      <Attribute name="InstrumentName">
+        <StringValue>
+          <s>OMI</s>
+        </StringValue>
+      </Attribute>
+      <Attribute name="NumberOfBadOutputSamples">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>0</i></MinInt>
+            <MaxInt><i>2147483647</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="NumberOfConvergedSamples">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>0</i></MinInt>
+            <MaxInt><i>2147483647</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="NumberOfCrossTrackPixels">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>0</i></MinInt>
+            <MaxInt><i>2147483647</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="NumberOfExceededIterationsSamples">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>0</i></MinInt>
+            <MaxInt><i>2147483647</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="NumberOfFailedConvergenceSamples">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>0</i></MinInt>
+            <MaxInt><i>2147483647</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="NumberOfGoodInputSamples">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>0</i></MinInt>
+            <MaxInt><i>2147483647</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="NumberOfGoodOutputSamples">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>0</i></MinInt>
+            <MaxInt><i>2147483647</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="NumberOfInputSamples">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>0</i></MinInt>
+            <MaxInt><i>2147483647</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="NumberOfOutOfBoundsSamples">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>0</i></MinInt>
+            <MaxInt><i>2147483647</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="NumberOfScanLines">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>0</i></MinInt>
+            <MaxInt><i>2147483647</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="NumberOfSuspectOutputSamples">
+        <IntValue>
+          <IntRange>
+            <MinInt><i>0</i></MinInt>
+            <MaxInt><i>2147483647</i></MaxInt>
+          </IntRange>
+        </IntValue>
+      </Attribute>
+      <Attribute name="OrbitData">
+        <StringValue>
+          <s>DEFINITIVE</s>
+          <s>PREDICTED</s>
+        </StringValue>
+      </Attribute>
+      <Attribute name="PercentBadOutputSamples">
+        <FloatValue>
+          <FloatRange>
+            <MinFloat><f>0.0</f></MinFloat>
+            <MaxFloat><f>100.0</f></MaxFloat>
+          </FloatRange>
+        </FloatValue>
+      </Attribute>
+      <Attribute name="PercentGoodOutputSamples">
+        <FloatValue>
+          <FloatRange>
+            <MinFloat><f>0.0</f></MinFloat>
+            <MaxFloat><f>100.0</f></MaxFloat>
+          </FloatRange>
+        </FloatValue>
+      </Attribute>
+      <Attribute name="PercentSuspectOutputSamples">
+        <FloatValue>
+          <FloatRange>
+            <MinFloat><f>0.0</f></MinFloat>
+            <MaxFloat><f>100.0</f></MaxFloat>
+          </FloatRange>
+        </FloatValue>
+      </Attribute>
+      <Attribute name="PGEVERSION">
+        <StringValue>
+          <s>2.0.5</s>
+        </StringValue>
+      </Attribute>
+      <Attribute name="ProcessingCenter">
+        <StringValue>
+          <s>OMIDAPS</s>
+          <s>TLCF</s>
+        </StringValue>
+      </Attribute>
+      <Attribute name="ProcessingHost">
+        <StringValue/>
+      </Attribute>
+      <Attribute name="ProcessLevel">
+        <StringValue>
+          <s>2</s>
+        </StringValue>
+      </Attribute>
+      <Attribute name="SpaceCraftMaxAltitude">
+        <FloatValue>
+          <FloatRange>
+            <MinFloat><f>0.0e+00</f></MinFloat>
+            <MaxFloat><f>1.0e+30</f></MaxFloat>
+          </FloatRange>
+        </FloatValue>
+      </Attribute>
+      <Attribute name="SpaceCraftMinAltitude">
+        <FloatValue>
+          <FloatRange>
+            <MinFloat><f>0.0e+00</f></MinFloat>
+            <MaxFloat><f>1.0e+30</f></MaxFloat>
+          </FloatRange>
+        </FloatValue>
+      </Attribute>
+      <Attribute name="TAI93At0zOfGranule">
+        <FloatValue>
+          <FloatRange>
+            <MinFloat><f>0.0e+00</f></MinFloat>
+            <MaxFloat><f>1.0e+30</f></MaxFloat>
+          </FloatRange>
+        </FloatValue>
+      </Attribute>
+    </Mandatory>
+  </Attributes>
+  <Swaths>
+    <Every-Swath>
+      <Attributes>
+        <Mandatory>
+          <Attribute name="EarthSunDistance">
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>1.47e+11</f></MinFloat>
+                <MaxFloat><f>1.53e+11</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </Attribute>
+          <Attribute name="SwathName">
+            <StringValue>
+            <StringValue>
+              <s>OMI Total Column Amount H2O</s>
+            </StringValue>
+            </FloatValue>
+          </Attribute>
+          <Attribute name="VerticalCoordinate">
+            <StringValue>
+              <s>Total Column</s>
+            </StringValue>
+          </Attribute>
+        </Mandatory>
+      </Attributes>
+      <Swath-Dimensions>
+        <Mandatory-Dimensions>
+          <Dimension name="nTimes" min="0" max="9999"/>
+          <Dimension name="nUTCdim" min="6" max="6"/>
+          <Dimension name="nXtrack" min="1" max="60"/>
+        </Mandatory-Dimensions>
+      </Swath-Dimensions>
+      <GeolocationFields>
+        <Every-GeolocationField>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <SameDataTypeAsField/>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue/>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue/>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue/>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue/>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue/>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </Every-GeolocationField>
+      </GeolocationFields>
+      <DataFields>
+        <Every-DataField>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <SameDataTypeAsField/>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue/>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue/>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue/>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue/>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue/>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </Every-DataField>
+      </DataFields>
+    </Every-Swath>
+    <Swath-Named name="OMI Total Column Amount H2O">
+      <GeolocationFields>
+        <GeolocationField-Named name="Latitude">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-90.0</f></MinFloat>
+                <MaxFloat><f>90.0</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>deg</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Geodetic Latitude</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>Aura-Shared</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </GeolocationField-Named>
+        <GeolocationField-Named name="Longitude">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-180.0</f></MinFloat>
+                <MaxFloat><f>180.0</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>deg</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Geodetic Longitude</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>Aura-Shared</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        <GeolocationField-Named name="SolarAzimuthAngle">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-180.0</f></MinFloat>
+                <MaxFloat><f>180.0</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>deg</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Solar Azimuth Angle</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>Aura-Shared</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </GeolocationField-Named>
+        <GeolocationField-Named name="SolarZenithAngle">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>0.0</f></MinFloat>
+                <MaxFloat><f>180.0</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>deg</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Solar Zenith Angle</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>Aura-Shared</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </GeolocationField-Named>
+        <GeolocationField-Named name="SpacecraftAltitude">
+          <Dimensions><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>0.0e+00</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>m</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Altitude of Aura Spacecraft</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>Aura-Shared</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </GeolocationField-Named>
+        <GeolocationField-Named name="TerrainHeight">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <IntValue>
+              <IntRange>
+                <MinInt><i>-1000</i></MinInt>
+                <MaxInt><i>10000</i></MaxInt>
+              </IntRange>
+              <i>-30000</i>
+            </IntValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <IntValue>
+                  <i>-30000</i>
+                </IntValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>m</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Terrain Height</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>Aura-Shared</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </GeolocationField-Named>
+        <GeolocationField-Named name="Time">
+          <Dimensions><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>0.0e+00</f></MinFloat>
+                <MaxFloat><f>1.0e+10</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>s</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Time in TAI units</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>Aura-Shared</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </GeolocationField-Named>
+        <GeolocationField-Named name="TimeUTC">
+          <Dimensions><d>nUTCdim</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <IntValue>
+              <IntRange>
+                <MinInt><i>0</i></MinInt>
+                <MaxInt><i>9999</i></MaxInt>
+              </IntRange>
+              <i>-30000</i>
+            </IntValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <IntValue>
+                  <i>-30000</i>
+                </IntValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Coordianted Universal Time</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </GeolocationField-Named>
+        <GeolocationField-Named name="ViewingAzimuthAngle">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-180.0</f></MinFloat>
+                <MaxFloat><f>180.0</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>deg</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Viewing Azimuth Angle</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>Aura-Shared</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </GeolocationField-Named>
+        <GeolocationField-Named name="ViewingZenithAngle">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>0.0</f></MinFloat>
+                <MaxFloat><f>180.0</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>deg</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Viewing Zenith Angle</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </GeolocationField-Named>
+      </GeolocationFields>
+      <DataFields>
+        <DataField-Named name="AirMassFactor">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>0.0e+00</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Molecule Specific Air Mass Factor (AMF)</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="AirMassFactorDiagnosticFlag">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <IntValue>
+              <IntRange>
+                <MinInt><i>-2</i></MinInt>
+                <MaxInt><i>13127</i></MaxInt>
+              </IntRange>
+              <i>-30000</i>
+            </IntValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <IntValue>
+                  <i>-30000</i>
+                </IntValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Diagnostic Flag for Molecule Specific AMF</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="AirMassFactorGeometric">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>0.0e+00</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Geometric Air Mass Factor (AMF)</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="AMFCloudFraction">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>0.0e+00</f></MinFloat>
+                <MaxFloat><f>1.0e+00</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Adjusted Cloud Fraction for AMF Computation</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="AMFCloudPressure">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>0.0e+00</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>hPa</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Adjusted Cloud Pressure for AMF Computation</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="AverageColumnAmount">
+          <Dimensions><d>1</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-1.0e+30</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>molec/cm2</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Average Column Amount</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="AverageColumnUncertainty">
+          <Dimensions><d>1</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-1.0e+30</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>molec/cm2</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Average Column Uncertainty</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="AverageFittingRMS">
+          <Dimensions><d>1</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>0.0e+00</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Average Fitting RMS</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="ColumnAmount">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-1.0e+30</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>molec/cm2</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Column Amount</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="ColumnAmountDestriped">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-1.0e+30</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>molec/cm2</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Column Amount with Destriping Correction</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="ColumnUncertainty">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-1.0e+30</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>molec/cm2</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Column Uncertainty</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="FitConvergenceFlag">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <IntValue>
+              <IntRange>
+                <MinInt><i>-12</i></MinInt>
+                <MaxInt><i>12344</i></MaxInt>
+              </IntRange>
+              <i>-30000</i>
+            </IntValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <IntValue>
+                  <i>-30000</i>
+                </IntValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Fitting Convergence Flag</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="FittingRMS">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>0.0e+99</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Fitting RMS</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="MainDataQualityFlag">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <IntValue>
+              <IntRange>
+                <MinInt><i>-1</i></MinInt>
+                <MaxInt><i>2</i></MaxInt>
+              </IntRange>
+              <i>-1</i>
+            </IntValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <IntValue>
+                  <i>-1</i>
+                </IntValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Main Data Quality Flag</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="MaximumColumnAmount">
+          <Dimensions><d>1</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-1.0e+30</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>molec/cm2</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Maximum Column Amount for 'good' Columns</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named> 
+       <DataField-Named name="PixelCornerLatitudes">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-90.0</f></MinFloat>
+                <MaxFloat><f>90.0</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>deg</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Pixel Corner Latitude Coordinates</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="PixelCornerLongitudes">
+          <Dimensions><d>nXtrack</d><d>nTimes</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-180.0</f></MinFloat>
+                <MaxFloat><f>180.0</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>deg</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Pixel Corner Longitude Coordinates</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="RadianceReferenceColumnAmount">
+          <Dimensions><d>nXtrack</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-1.0e+30</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>molec/cm2</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Radiance Reference Column Amount</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="RadianceReferenceColumnUncertainty">
+          <Dimensions><d>nXtrack</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-1.0e+30</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>molec/cm2</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Radiance Reference Column Uncertainty</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="RadianceReferenceXTRFit">
+          <Dimensions><d>nXtrack</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-1.0e+30</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>molec/cm2</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Radiance Reference Cross-Track Fit</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="RadianceReferenceConvergenceFlag">
+          <Dimensions><d>nXtrack</d></Dimensions>
+          <DataType>
+            <IntValue>
+              <IntRange>
+                <MinInt><i>-12</i></MinInt>
+                <MaxInt><i>12344</i></MaxInt>
+              </IntRange>
+              <i>-30000</i>
+            </IntValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <IntValue>
+                  <i>-30000</i>
+                </IntValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Radiance Reference Fit Convergence Flag</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="RadianceReferenceFittingRMS">
+          <Dimensions><d>nXtrack</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>0.0e+99</f></MinFloat>
+                <MaxFloat><f>1.0e+30</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Radiance Reference Fitting RMS</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="RadianceReferenceLatitudeRange">
+          <Dimensions><d>2</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-90.0</f></MinFloat>
+                <MaxFloat><f>90.0</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Radiance Reference Fit Latitude Range</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="RadianceWavCalConvergenceFlag">
+          <Dimensions><d>nXtrack</d></Dimensions>
+          <DataType>
+            <IntValue>
+              <IntRange>
+                <MinInt><i>-12</i></MinInt>
+                <MaxInt><i>12344</i></MaxInt>
+              </IntRange>
+              <i>-30000</i>
+            </IntValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <IntValue>
+                  <i>-30000</i>
+                </IntValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Radiance Wavelength Calibration Convergence Flag</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="RadianceWavCalLatitudeRange">
+          <Dimensions><d>2</d></Dimensions>
+          <DataType>
+            <FloatValue>
+              <FloatRange>
+                <MinFloat><f>-90.0</f></MinFloat>
+                <MaxFloat><f>90.0</f></MaxFloat>
+              </FloatRange>
+              <FloatRange>
+                <MinFloat><f>-1.1e+30</f></MinFloat>
+                <MaxFloat><f>-1.0e+30</f></MaxFloat>
+              </FloatRange>
+            </FloatValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <FloatValue>
+                  <FloatRange>
+                    <MinFloat><f>-1.1e+30</f></MinFloat>
+                    <MaxFloat><f>-1.0e+30</f></MaxFloat>
+                  </FloatRange>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Radiance Wavelength Calibration Latitude Range</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+        <DataField-Named name="SolarWavCalConvergenceFlag">
+          <Dimensions><d>nXtrack</d></Dimensions>
+          <DataType>
+            <IntValue>
+              <IntRange>
+                <MinInt><i>-12</i></MinInt>
+                <MaxInt><i>12344</i></MaxInt>
+              </IntRange>
+              <i>-30000</i>
+            </IntValue>
+          </DataType>
+          <Attributes>
+            <Mandatory>
+              <Attribute name="MissingValue">
+                <IntValue>
+                  <i>-30000</i>
+                </IntValue>
+              </Attribute>
+              <Attribute name="Units">
+                <StringValue>
+                  <s>NoUnits</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="Title">
+                <StringValue>
+                  <s>Solar Wavelength Calibration Convergence Flag</s>
+                </StringValue>
+              </Attribute>
+              <Attribute name="UniqueFieldDefinition">
+                <StringValue>
+                  <s>OMI-Specific</s>
+                </StringValue>
+              </Attribute>
+            </Mandatory>
+            <Optional>
+              <Attribute name="Offset">
+                <FloatValue>
+                  <f>0.0</f>
+                </FloatValue>
+              </Attribute>
+              <Attribute name="ScaleFactor">
+                <FloatValue>
+                  <f>1.0</f>
+                </FloatValue>
+              </Attribute>
+            </Optional>
+          </Attributes>
+        </DataField-Named>
+      </DataFields>
+    </Swath-Named>
+  </Swaths>
+</HDF-EOS-Validation-Definition>

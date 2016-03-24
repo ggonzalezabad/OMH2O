@@ -1,0 +1,17 @@
+#-------------------------------------------------------------------------------
+# ciList.txt   version of CI and subordinates
+#
+# Versions listed in this file show the developer-tested configuration.
+#
+# The first non-comment line lists the primary CI's (PGE or shared code) name
+# and master version number.
+#-------------------------------------------------------------------------------
+
+OMH2O               1.0.0
+OMI_SAO_Shared_VOCs 1.0.0
+
+omi_env_setup       0.9.4
+
+PGSTK               5.2.18v1.00
+
+#-------------------------------------------------------------------------------
