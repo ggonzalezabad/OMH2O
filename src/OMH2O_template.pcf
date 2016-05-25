@@ -76,10 +76,10 @@
 # WARNING! DO NOT MODIFY THIS LINE unless you have relocated these 
 # data set files to the location specified by the new setting.
 ! ../out
-700010|+Or+||||+Or+|1
-700015|+Or+||||+Or+|1
-700020|+Ir+||||+Ir+|1
-700240|+Cd+||||+Cd+|1
+700010|OML1BRVG-o+Or+.he4||||OML1BRVG-o+Or+.he4|1
+700015|OML1BRVG-o+Or+.he4||||OML1BRVG-o+Or+.he4|1
+700020|OML1BIRR-o+Ir+.he4||||OML1BIRR-o+Ir+.he4|1
+700240|OMCLDO2-o+Or+.he5||||OMCLDO2-o+Or+.he5|1
 #
 # -----------------------------------------------------------------------
 # The following are for the PGS_GCT tool only.  The IDs are #defined in
@@ -154,7 +154,7 @@
 #########################################################################
 # Next line is the default location for PRODUCT OUTPUT FILES
 ! ../out
-700999|../result/+Ou+||||../result/+Ou+|1
+700999|+Out+||||+Out+|1
 #
 #------------------------------------------------------------------------
 # This file is created when PGS_MET_Write is used with an intention
@@ -244,12 +244,12 @@
 700105|OMSAO_O3_243K_Brion.dat|../tbl||||1
 700106|OMSAO_NO2_294K_IASB.dat|../tbl||||1
 700107|OMSAO_NO2_220K_IASB.dat|../tbl||||1
-700108|OMSAO_O4_294K_BISA.dat|../tbl||||1
+700108|OMSAO_O4_293K_Thalman.dat|../tbl||||1
 700109|OMSAO_SO2_295K_IASB.dat|../tbl||||1
 700110|OMSAO_BrO_228K_Wilmouth.dat|../tbl||||1
 700111|OMSAO_OClO_213K_UBremen.dat|../tbl||||1
 700112|OMSAO_HCHO_300K_Cantrell_MMcorrected.dat|../tbl||||1
-700113|OMSAO_H2O_280K_HITRAN2008.dat|../tbl||||1
+700113|OMSAO_H2O_288K1.0ATM_HIT2009.dat|../tbl||||1
 700114|OMSAO_LQH2O_PopeFry_Pure2column.dat|../tbl||||1
 700115|OMSAO_CHOCHO_296K_Volkamer.dat|../tbl||||1
 700116|OMSAO_IO_298K_UBremen.dat|../tbl||||1
@@ -267,8 +267,8 @@
 # ----------
 700210|OMHCHO_AMF_Tables_2x2p5_328nm.he5|../tbl||||1
 700230|OMHCHO_ISCCP_Clouds_1200h.he5|../tbl||||1
-700250|AMFs_lookup_430_480nm.he5|../tbl||||1
-700270|OMI_H2OBrOSO2HCHO_GEOS5_2x2p5.he5|../tbl||||1
+700250|AMFs_lookup_h2o_442nm.he5|../tbl||||1
+700270|OMI_H2O_MERRA.he5|../tbl||||1
 700280|OMI-Aura_L3-OMLER_2005m01-2009m12_v003-2010m0503t063707.he5|../tbl||||1
 #
 # -----------------------------------------------------------------------
@@ -350,7 +350,7 @@
 200185|AuthorAffiliation|"Smithsonian Astrophysical Observatory"
 200190|AuthorName|"Thomas P. Kurosu / Gonzalo Gonzalez Abad / Helen Wang"
 200195|LOCALVERSIONID|"RFC1321 MD5 = not yet calculated"
-200200|OrbitNumber|10638
+200200|OrbitNumber|+Or+
 200210|SwathName|"OMI Total Column Amount H2O"
 200220|VERSIONID|3
 #

@@ -117,7 +117,7 @@ F 3
 # ========================================================================
 Fitting window settings
 VIS
-428.0 430.0 480.0 482.0 0.0 0.0
+425.0 427.7 465.0 467.2 0.0 0.0
 
 # ------------------------------------------------------------------------
 # Weighting-function modified Air Mass Factors
@@ -173,11 +173,11 @@ Solar calibration parameters
 bl0   0.0250   -1.0e+30   1.0e+30
 bl1   0.0030   -1.0e+30   1.0e+30
 bl2   0.0001   -1.0e+30   1.0e+30
-bl3  -5.0E-05  -1.0e+30   1.0e+30
+bl3  -5.0e-05  -1.0e+30   1.0e+30
 sc0   1.0       1.0       1.0    
 sc1  -0.0050   -1.0e+30   1.0e+30
 sc2  -0.0003   -1.0e+30   1.0e+30
-sc3   8.0E-05  -1.0e+30   1.0e+30
+sc3   8.0e-05  -1.0e+30   1.0e+30
 sin   0.6000   -1.0e+30   1.0e+30
 hwe  -1.0      -1.0      -1.0     # Gaussian HW@1/e
 asy  -1.0      -1.0      -1.0     # Gaussian asymmetry
@@ -198,8 +198,8 @@ bl2   -0.0001    -1.0e+30    1.0e+30
 bl3   +0.0001    -1.0e+30    1.0e+30
 sc0    1.0        1.0        1.0    
 sc1   -0.0030    -1.0e+30    1.0e+30
-sc2    5.0E-05   -1.0e+30    1.0e+30
-sc3   -5.0E-05   -1.0e+30    1.0e+30
+sc2    5.0e-05   -1.0e+30    1.0e+30
+sc3   -5.0e-05   -1.0e+30    1.0e+30
 sin    0.095     -1.0e+30    1.0e+30
 hwe   -1.0       -1.0       -1.0     # Gaussian HW@1/e
 asy   -1.0       -1.0       -1.0     # Gaussian asymmetry
@@ -255,6 +255,9 @@ eoi    0         0          0
 glyox
 lbe    1.0e-03  -1.0e+30    1.0e+30
 eoi    0         0          0
+io
+lbe    1.0e-03  -1.0e+30    1.0e+30
+eoi    0         0          0
 vraman
 ad1    2.0e-04  -1.0e+30    1.0e+30   
 eoi    0         0          0
@@ -277,7 +280,7 @@ end_of_input
 # constrain the absolute value of the fitting result.
 # -------------------------------------------------------------
 Maximum Good Column Amount
-1.0E+24
+4.E+23
 
 # ----------------------------------------------------------------
 # The next block controls the cross-track smoothing procedure.
