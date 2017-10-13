@@ -24,7 +24,7 @@ General fitting parameters
  F             # DOAS fitting?
  -900 -900     # First+last OMI scan line to fit ("-1 -1" for "all")
     1  60      # First+last OMI cross track pixel (values < 1 for "all")
--80.0  +80.0   # Lower and upper latitude limit to process
+-90.0  +90.0   # Lower and upper latitude limit to process
  1.0E-08       # pseudo rank tolerance   constant  (TOL    = SQRT(mach. prec.))
  1.0E-04       # relative    convergence constant  (EPSREL = SQRT(mach. prec.))
  1.0E-04       # absolute    convergence constant  (EPSABS = mach. prec.)
@@ -117,7 +117,7 @@ F 3
 # ========================================================================
 Fitting window settings
 VIS
-425.0 427.7 465.0 467.2 0.0 0.0
+426.5 428.5 465.0 467.0 0.0 0.0
 
 # ------------------------------------------------------------------------
 # Weighting-function modified Air Mass Factors
@@ -280,7 +280,7 @@ end_of_input
 # constrain the absolute value of the fitting result.
 # -------------------------------------------------------------
 Maximum Good Column Amount
-4.E+23
+1.0E+24
 
 # ----------------------------------------------------------------
 # The next block controls the cross-track smoothing procedure.
