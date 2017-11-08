@@ -154,7 +154,7 @@
 #########################################################################
 # Next line is the default location for PRODUCT OUTPUT FILES
 ! ../out
-700999|OMH2O_2005m0714t2324-o05311_test2.he5||||OMH2O_2005m0714t2324-o05311_test2.he5|1
+700999|OMH2O_2005m0714t2324-o05311_test.he5||||OMH2O_2005m0714t2324-o05311_test.he5|1
 #
 #------------------------------------------------------------------------
 # This file is created when PGS_MET_Write is used with an intention
@@ -249,8 +249,8 @@
 700110|OMSAO_BrO_228K_Wilmouth.dat|../tbl||||1
 700111|OMSAO_OClO_213K_UBremen.dat|../tbl||||1
 700112|OMSAO_HCHO_300K_Cantrell_MMcorrected.dat|../tbl||||1
-700113|OMSAO_H2O_288K1.0ATM_HIT2012.dat|../tbl||||1
-700114|OMSAO_LQH2O_PopeFry_Pure2column.dat|../tbl||||1
+700113|OMSAO_H2O_288K1.0ATM_HIT2016new.dat|../tbl||||1
+700114|OMSAO_LQH2O_Mason_Pure.dat|../tbl||||1
 700115|OMSAO_CHOCHO_296K_Volkamer.dat|../tbl||||1
 700116|OMSAO_IO_298K_UBremen.dat|../tbl||||1
 700117|OMSAO_Zero_Spec.dat|../tbl||||1
@@ -340,7 +340,7 @@
 #########################################################################
 #
 200100|SMF Verbosity Threshold|6
-200105|PGEVERSION|"1.0.0"
+200105|PGEVERSION|"3.0.0"
 200110|ProcessingCenter|"OMIDAPS"
 200115|ProcessingHost|"Linux ompspeate3.gsfc.nasa.gov 2.6.9-55.0.2.ELsmp #1 SMP Tue Jun 26 14:30:58 EDT 2007 i686 i686 i386 GNU/Linux"
 200135|REPROCESSINGACTUAL|"processed 1 time"
