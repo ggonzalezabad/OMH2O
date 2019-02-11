@@ -19,6 +19,17 @@ NOTE: OMH2O is one of the PGEs by the Smithsonian Astrophysical
       information on PGE version history.
 --------------------------------------------------------------------------------
 
+4.1.0                                                           11 February 2019
+--------------------------------------------------------------------------------
+Version 4.1.0 including the following updates after extensive validation:
+	- Year dependent MERRA2 monthly climatology
+	- Fitting window 432.0 - 466.5 nm
+	- Air vibrational Ramman (Lampel et al., 2015)
+	- Use of new cloud product (Veefkind et al., 2016) with enhanced
+	  treatment of snow/ice in AMF calculation
+	- Stop using ISCPP cloud climatology when missing cloud retrival
+	  information
+
 1.0.0                                                             26 August 2013
 --------------------------------------------------------------------------------
 First version under Gonzalo Gonzalez Abad and Helen Wang

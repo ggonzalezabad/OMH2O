@@ -79,7 +79,7 @@
 700010|+Or+||||+Or+|1
 700015|+Or+||||+Or+|1
 700020|+Ir+||||+Ir+|1
-700240|+Cl+||||+Cl+|1
+700240|+Cd+||||+Cd+|1
 #
 # -----------------------------------------------------------------------
 # The following are for the PGS_GCT tool only.  The IDs are #defined in
@@ -153,8 +153,8 @@
 #
 #########################################################################
 # Next line is the default location for PRODUCT OUTPUT FILES
-! ../out
-700999|+Out+||||+Out+|1
+! ../test
+700999|+Ou+||||+Ou+|1
 #
 #------------------------------------------------------------------------
 # This file is created when PGS_MET_Write is used with an intention
@@ -257,7 +257,7 @@
 700118|OMSAO_VibrationalRaman_Spectrum.dat|../tbl||||1
 700119|OMSAO_Zero_Spec.dat|../tbl||||1
 700120|OMSAO_Zero_Spec.dat|../tbl||||1
-700121|OMSAO_O4shi_294K_BISA_rmoffset347nm.dat|../tbl||||1
+700121|VRS_N2_O2_based_on_SAO2010.dat|../tbl||||1
 700122|OMSAO_Zero_Spec.dat|../tbl||||1
 700123|OMSAO_Zero_Spec.dat|../tbl||||1
 700124|OMSAO_Zero_Spec.dat|../tbl||||1
@@ -268,7 +268,7 @@
 700210|OMHCHO_AMF_Tables_2x2p5_328nm.he5|../tbl||||1
 700230|OMHCHO_ISCCP_Clouds_1200h.he5|../tbl||||1
 700250|AMFs_lookup_h2o_442nm.he5|../tbl||||1
-700270|OMI_H2O_MERRA_v2.he5|../tbl||||1
+700270|OMI_H2O_MERRA2.he5|../tbl||||1
 700280|OMI-Aura_L3-OMLER_2005m01-2009m12_v003-2010m0503t063707.he5|../tbl||||1
 #
 # -----------------------------------------------------------------------
@@ -340,7 +340,7 @@
 #########################################################################
 #
 200100|SMF Verbosity Threshold|6
-200105|PGEVERSION|"2.2.0"
+200105|PGEVERSION|"3.3.4"
 200110|ProcessingCenter|"OMIDAPS"
 200115|ProcessingHost|"Linux ompspeate3.gsfc.nasa.gov 2.6.9-55.0.2.ELsmp #1 SMP Tue Jun 26 14:30:58 EDT 2007 i686 i686 i386 GNU/Linux"
 200135|REPROCESSINGACTUAL|"processed 1 time"

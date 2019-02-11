@@ -7,7 +7,7 @@ Author(s):    Gonzalo Gonzalez Abad (SAO)
               Helen Wang (SAO)
               Thomas P. Kurosu
 
-PGE Version:  	           1.0.0
+PGE Version:  	           4.1.0
 Lead Algorithm Scientist:  Kelly Chance (SAO)
 Lead Algorithm Developer:  Kelly Chance (SAO)
 Lead PGE Developer:        Thomas P. Kurosu (SAO)
@@ -17,7 +17,7 @@ PGE Developer(s):          Gonzalo Gonzalez Abad (SAO)
 
 Description:  >  
  
- This document specifies the product format for the Version 1.0.0 delivery
+ This document specifies the product format for the Version 4.1.0 delivery
  of the OMH2O L2 PGE, which uses a Basic Optical Absorption Spectroscopy
  (BOAS) type algorithm based on non-linear least squares fitting to estimate
  total column H2O from OMI VIS measurements.  The product is stored as one
@@ -283,7 +283,7 @@ Global Metadata:
    Minimum Value:     0.0.
    Maximum Value:     9.9.99
    Data Source:       PCF
-   Description:       Actual is "1.0.0".
+   Description:       Actual is "4.1.0".
 
  - Metadata Name:     ProcessingCenter
    Mandatory:         T
@@ -754,23 +754,6 @@ Data Fields:
    Description:              >
     Fitting RMS averaged over the the whole granule.
 
- - Field Name:               ClimatologyLevels
-   Data Type:                HE5T_NATIVE_DOUBLE
-   Dimensions:               nXtrack,nTimes,nLevels
-   Minimum Value:            -1.0e+30
-   Maximum Value:            1.0e+30
-   Missing Value:            -1.0e+30
-   Offset:                   0.0e+00
-   Scale Factor:             1.0e+00
-   Units:                    hPa
-   Data Source:              PGE
-   Title:                    "Climatology Levels"
-   Unique Field Definition:  OMI-Specific
-   Description:              >
-    Pressure at grid center of the GEOS-Chem climatology used in the AMFs calculations.
-    Obtained from GEOS-Chem, GEOS5 reduced grid.
-    Scattering weights are interpolated to this grid.
-
  - Field Name:               ColumnAmount
    Data Type:                HE5T_NATIVE_DOUBLE
    Dimensions:               nXtrack,nTimes
@@ -962,22 +945,6 @@ Data Fields:
     Maximum absolute column amount up to which fitted colums qualify
     as 'good'. Beyond this value they are considered 'suspect'.
 
- - Field Name:               PixelArea
-   Data Type:                HE5T_NATIVE_FLOAT
-   Dimensions:               nXtrack
-   Minimum Value:            0.0
-   Maximum Value:            4.13294e+08
-   Missing Value:            -1.0e+30
-   Offset:                   0.0e+00
-   Scale Factor:             1.0e+00
-   Units:                    km^2
-   Data Source:              PGE
-   Title:                    "Pixel Area"
-   Unique Field Definition:  OMI-Specific
-   Description:              >
-    The area (in km^2) of tiled ground pixels. One representative
-    value for each cross-track position is provided.
-
  - Field Name:               PixelCornerLatitudes
    Data Type:                HE5T_NATIVE_FLOAT
    Dimensions:               nXtrack+1,nTimes+1
@@ -1009,105 +976,6 @@ Data Fields:
    Description:              >
     The geodetic longitudes (in deg) of the corner coordinates of the
     OMI ground pixels.
-
- - Field Name:               RadianceReferenceColumnAmount
-   Data Type:                HE5T_NATIVE_DOUBLE
-   Dimensions:               nXtrack
-   Minimum Value:            -1.0e+30
-   Maximum Value:            1.0e+30
-   Missing Value:            -1.0e+30
-   Offset:                   0.0e+00
-   Scale Factor:             1.0e+00
-   Units:                    molec/cm2
-   Data Source:              PGE
-   Title:                    "Radiance Reference Column Amount"
-   Unique Field Definition:  OMI-Specific
-   Description:              >
-    Total column amount (in molecules/cm2) for
-    each ground pixel in the reference swath line.
-
- - Field Name:               RadianceReferenceColumnUncertainty
-   Data Type:                HE5T_NATIVE_DOUBLE
-   Dimensions:               nXtrack
-   Minimum Value:            0.0e+00
-   Maximum Value:            1.0e+30
-   Missing Value:            -1.0e+30
-   Offset:                   0.0e+00
-   Scale Factor:             1.0e+00
-   Units:                    molec/cm2
-   Data Source:              PGE
-   Title:                    "Radiance Reference Column Uncertainty"
-   Unique Field Definition:  OMI-Specific
-   Description:              >
-    Total column amount uncertainty (in molecules/cm2)
-    for each ground pixel in the reference swath line.
-
- - Field Name:               RadianceReferenceColumnXTRFit
-   Data Type:                HE5T_NATIVE_DOUBLE
-   Dimensions:               nXtrack
-   Minimum Value:            0.0e+00
-   Maximum Value:            1.0e+30
-   Missing Value:            -1.0e+30
-   Offset:                   0.0e+00
-   Scale Factor:             1.0e+00
-   Units:                    molec/cm2
-   Data Source:              PGE
-   Title:                    "Radiance Reference Fit Colunm XTR Fit"
-   Unique Field Definition:  OMI-Specific
-   Description:              >
-    Cross-track fit (in molecules/cm2) to RadianceReferenceColumnAmount
-    that is removed from the radiance reference spectrum if the option
-    to remove the target gas from the radiance reference has been selected.
-
- - Field Name:               RadianceReferenceConvergenceFlag
-   Data Type:                HE5T_NATIVE_INT16
-   Dimensions:               nXtrack
-   Minimum Value:            -10
-   Maximum Value:            12344
-   Missing Value:            -30000
-   Offset:                   0.0e+00
-   Scale Factor:             1.0e+00
-   Units:                    NoUnits
-   Data Source:              PGE
-   Title:                    "Radiance Reference Fit Convergence Flag"
-   Unique Field Definition:  OMI-Specific
-   Description:              >
-    The flag indicating the type of (non-) convergence of the non-linear
-    least squares fitting routine for the reference swath line.
-    For a detailed description of the flag refer to FitConvergenceFlag.
-
- - Field Name:               RadianceReferenceFittingRMS
-   Data Type:                HE5T_NATIVE_DOUBLE
-   Dimensions:               nXtrack
-   Minimum Value:            0.0e+00
-   Maximum Value:            1.0e+30
-   Missing Value:            -1.0e+30
-   Offset:                   0.0e+00
-   Scale Factor:             1.0e+00
-   Units:                    NoUnits
-   Data Source:              PGE
-   Title:                    "Radiance Reference Fitting RMS"
-   Unique Field Definition:  OMI-Specific
-   Description:              >
-     Fitting RMS for each ground pixel in the radiance reference line.
-
- - Field Name:               RadianceReferenceLatitudeRange
-   Data Type:                HE5T_NATIVE_FLOAT
-   Dimensions:               2
-   Minimum Value:            -90.0
-   Maximum Value:            90.0
-   Missing Value:            -1.0e+30
-   Offset:                   0.0e+00
-   Scale Factor:             1.0e+00
-   Units:                    NoUnits
-   Data Source:              PGE
-   Title:                    "Radiance Reference Fit LatitudeRange"
-   Unique Field Definition:  OMI-Specific
-   Description:              >
-    Lower and upper latitude values defining the range that went into the
-    composition of the radiance reference spectrum. If equal, a single swath
-    line was used with latitude value at nadir closest to the lower latitude
-    entry.
 
  - Field Name:               RadianceWavCalConvergenceFlag
    Data Type:                HE5T_NATIVE_INT
@@ -1144,22 +1012,6 @@ Data Fields:
     If equal, a single swath line was used with latitude value at nadir 
     closest to the lower latitude entry.
 
- - Field Name:               ReferenceSectorCorrectedVerticalColumn
-   Data Type:                HE5T_NATIVE_DOUBLE
-   Dimensions:               nXtrack,nTimes
-   Minimum Value:            -1.0e+30
-   Maximum Value:            1.0e+30
-   Missing Value:            -1.0e+30
-   Offset:                   0.0e+00
-   Scale Factor:             1.0e+00
-   Units:                    molec/cm2
-   Data Source:              PGE
-   Title:                    "Reference Sector Corrected Vertical Column"
-   Unique Field Definition:  OMI-Specific
-   Description:              >
-    Total column amount (in molecules/cm2) for
-    each ground pixel obtained after correcting retrieved VCD with the
-    reference sector climatology
 
  - Field Name:               ScatteringWeights
    Data Type:                HE5T_NATIVE_DOUBLE
@@ -1192,6 +1044,26 @@ Data Fields:
     The flag indicating the type of (non-) convergence of the non-linear
     least squares fitting routine for the solar wavelength calibration.
     For a detailed description of the flag refer to FitConvergenceFlag.
+
+ - Field Name:               SurfacePressure
+   Data Type:                HE5T_NATIVE_DOUBLE
+   Dimensions:               nXtrack,nTimes
+   Minimum Value:            -1.0e+30
+   Maximum Value:            1.0e+30
+   Missing Value:            -1.0e+30
+   Offset:                   0.0e+00
+   Scale Factor:             1.0e+00
+   Units:                    hPa
+   Data Source:              PGE
+   Title:                    "Surface Pressure"
+   Unique Field Definition:  OMI-Specific
+   Description:              >
+    Surface pressure at grid center of the climatology used in the AMFs calculations.
+    Pressures at each one of the 47 layers edge/center can be calculated as:
+    Pedge(I,J,L) = Ap(L) + [ Bp(L) * Psurface(I,J) ]
+    Pcenter(I,J,L) = [ Pedge(I,J,L) + Pedge(I,J,L+1) ]
+    with Ap and Bp defined here:
+    http://wiki.seas.harvard.edu/geos-chem/index.php/GEOS-Chem_vertical_grids#Reference_section_for_vertical_grids
 
 
 Core Metadata:
@@ -1366,7 +1238,7 @@ Core Metadata:
    Minimum Value:     0.0.0
    Maximum Value:     9.9.99
    Data Source:       PCF
-   Description:       Actual is "1.0.0".
+   Description:       Actual is "4.1.0".
 
  - Metadata Name:     ProductionDateTime
    Mandatory:         T

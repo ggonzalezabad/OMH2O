@@ -18,7 +18,6 @@ Processing mode
 production
 diagnostic
 
-
 General fitting parameters
  F             # SMOOTH spectra?
  F             # DOAS fitting?
@@ -117,7 +116,7 @@ F 3
 # ========================================================================
 Fitting window settings
 VIS
-425.2 427.7 465.0 467.5 0.0 0.0
+430.0  432.0  466.5  468.5  0.0  0.0
 
 # ------------------------------------------------------------------------
 # Weighting-function modified Air Mass Factors
@@ -261,8 +260,8 @@ eoi    0         0          0
 vraman
 ad1    2.0e-04  -1.0e+30    1.0e+30   
 eoi    0         0          0
-commod
-ad2    0.0010   -1.0e+30    1.0e+30
+pseudo
+ad1    1.0e-04  -1.0e+30    1.0e+30
 eoi    0         0          0
 usamp1
 ad1   -0.01     -1.0e+30    1.0e+30
@@ -280,7 +279,7 @@ end_of_input
 # constrain the absolute value of the fitting result.
 # -------------------------------------------------------------
 Maximum Good Column Amount
-1.0E+24
+0.5E+24
 
 # ----------------------------------------------------------------
 # The next block controls the cross-track smoothing procedure.

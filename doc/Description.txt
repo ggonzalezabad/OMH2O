@@ -2,7 +2,7 @@
 
 APP Name:    OMH2O
 APP Type:    OMI
-APP Version: 1.0.0
+APP Version: 4.1.0
 
 Long Name: OMI/Aura water vapor (H2O) Total Column 1-Orbit L2 Swath 13x24km
 
@@ -54,7 +54,7 @@ Static Input Files:
       Desc:     Fitting control file for algorithm set-up.
 
     - LUN:      700101
-      Filename: OMSAO_NKPNO_SolarSpec_JQSRT2011.dat.dat
+      Filename: OMSAO_KNMI_SolarSpec.dat
       Desc:     Solar reference spectrum.
 
     - LUN:      700102
@@ -70,11 +70,11 @@ Static Input Files:
       Desc:     O3 absorption X-sec at T2.
 
     - LUN:      700105
-      Filename: OMSAO_Zero_Spec.dat
+      Filename: OMSAO_O3_243K_Brion.dat
       Desc:     O3 absorption X-sec at T3. Not used by default.
 
     - LUN:      700106
-      Filename: OMSAO_NO2_220K_IASB.dat
+      Filename: OMSAO_NO2_294K_IASB.dat
       Desc:     NO2 absorption X-sec T1. Not used
 
     - LUN:      700107
@@ -82,11 +82,11 @@ Static Input Files:
       Desc:     NO2 absorption X-sec T2. 
 
     - LUN:      700108
-      Filename: OMSAO_O4_294K_BISA.dat
+      Filename: OMSAO_O4_293K_Thalman.dat
       Desc:     O2-O2 absorption X-sec.
 
     - LUN:      700109
-      Filename: OMSAO_SO2_295k_IASB.dat
+      Filename: OMSAO_SO2_295K_IASB.dat
       Desc:     SO2 absorption X-sec. Not used by default.
 
     - LUN:      700110
@@ -102,11 +102,11 @@ Static Input Files:
       Desc:     HCHO absorption X-sec. Not used.
 
     - LUN:      700113
-      Filename: OMSAO_H2O_280K_HITRAN2008.dat
+      Filename: OMSAO_H2O_288K1.0ATM_HITRAN2009.dat
       Desc:     H2O absorption X-sec.
 
     - LUN:      700114
-      Filename: OMSAO_LQH2O_PopeFry_Pure2column.dat
+      Filename: OMSAO_LQH2O_Mason_Pure.dat
       Desc:     Liquid H2O absorption X-sec.
 
     - LUN:      700115
@@ -114,7 +114,7 @@ Static Input Files:
       Desc:     CHOCHO absorption X-sec.
 
     - LUN:      700116
-      Filename: OMSAO_Zero_Spec.dat
+      Filename: OMSAO_IO_298K_UBremen.dat
       Desc:     IO absorption X-sec. Not used by default.
 
     - LUN:      700117
@@ -134,7 +134,7 @@ Static Input Files:
       Desc:     Fitting Residuals. Not used by default.
 
     - LUN:      700121
-      Filename: OMSAO_Zero_Spec.dat
+      Filename: VRS_N2_O2_based_on_SAO2010.dat
       Desc:     Pseudo absorber X-secs. Not used by default.
 
     - LUN:      700122
@@ -170,11 +170,11 @@ Static Input Files:
       Desc:     ISCCP Cloud Climatology at 1200h. Not used
 
     - LUN:      700250
-      Filename: AMFs_lookup_325_430nm_m485.he5
+      Filename: AMFs_lookup_h2o_442nm.he5
       Desc:     Scattering weights look up table for H2O region.
 
     - LUN:      700270
-      Filename: OMI_H2OBrOSO2HCHO_GEOS5_2x2p5.he5
+      Filename: OMI_H2O_MERRA2.he5
       Desc:     H2O Climatology for AMFs calculations.
 
     - LUN:      700280
@@ -340,4 +340,4 @@ Summary Data Extraction Directives:
 Dependencies:
  
  - CI: OMI_SAO_Shared_VOCs
-   Version: 1.0.0
+   Version: 1.0.9

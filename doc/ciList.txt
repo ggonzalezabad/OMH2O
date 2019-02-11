@@ -7,8 +7,8 @@
 # and master version number.
 #-------------------------------------------------------------------------------
 
-OMH2O               1.0.0
-OMI_SAO_Shared_VOCs 1.0.0
+OMH2O               4.1.0
+OMI_SAO_Shared_VOCs 1.0.9
 
 omi_env_setup       0.9.4
 
